@@ -23,7 +23,7 @@ class TwitterTrendsStack(core.Stack):
                                                     CONSUMER_SECRET='',
                                                     ACCESS_TOKEN_KEY='',
                                                     ACCESS_TOKEN_SECRET='',
-                                                    OEID='')
+                                                    WOEID='')
                                    )
 
         bucket.grant_read_write(handler)

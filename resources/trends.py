@@ -16,7 +16,7 @@ def main(event, context):
                       access_token_secret=os.environ['ACCESS_TOKEN_SECRET'])
 
     # Get top 10 trending topics for a specific location
-    trends = api.GetTrendsWoeid(os.environ['OEID'])
+    trends = api.GetTrendsWoeid(os.environ['WOEID'])
 
     # Format to have a JSON document on each line
     body = '\n'.join(list(map(lambda trend: json.dumps(trend._json), trends)))
